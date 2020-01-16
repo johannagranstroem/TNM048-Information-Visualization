@@ -1,0 +1,73 @@
+﻿﻿<!DOCTYPE html>
+<!--
+    Author: Emilie Ho, Johanna Granström, Ronja Faltin
+    Date: Feb 25, 2019
+    Edited: March 8, 2019
+	HTML file based on Kahin Akram Hassan TNM048 lab 1
+    TNM048 Project - Visual Information of pubg map and deaths in relative to time
+    Main html file
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PUBG VISUALIZATION</title>
+    <link rel="stylesheet" href="libs/css/index.css" />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.css" rel="stylesheet">
+</head>
+<body class="container-fluid">
+    <div class="card text-center">
+        <div class="card-header">
+            <h2>Visual Information-PUBG deaths</h2>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-1 col-md-10 col-lg-10 col-xl-10">   
+                    <div id="mapid"></div>
+                    <br>
+                    <h6><strong>Time (sec)</strong></h6>
+                    <div id="slider"></div>
+                    <div id="slider-value"></div>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                    <div class="row">
+                        <div class="col-12" id="tooltip">
+                            <br>
+                            <h5><strong>Information</strong></h5>
+                            <hr>
+                            <p><span id="timeDeath">Survived for:</span></p>
+                            <!--<p><span id="position_x">Position X:</span></p>
+                            <p><span id="position_y">Position Y:</span></p>             -->
+                            <p><span id="killed_by">Killed by:</span></p>
+                            <p><span id="victim_placement">Placement:</span></p>
+                        </div>
+                    </div>
+                     <br>
+                     <div id = "butttons">
+                    <button type="button" class="btn btn-outline-success btn-block active" data-toggle="button" aria-pressed="false" autocomplete="off"> Game 1</button>
+                    <br><div>
+                    <button type="button" class="btn btn-outline-danger btn-block active" data-toggle="button" aria-pressed="false" autocomplete="off">Game 2</button>
+                    </div><br><div>
+                    <button type="button" class="btn btn-outline-primary btn-block active" data-toggle="button" aria-pressed="false" autocomplete="off">Game 3</button>
+                    </div><br><div>
+                    <button type="button" class="btn btn-outline-warning btn-block active" data-toggle="button" aria-pressed="false" autocomplete="off">Game 4</button>
+                    </div><br><div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type=text/javascript src="libs/jquery/jquery.min.js"></script>
+<script type=text/javascript src=libs/bootstrap/js/bootstrap.min.js></script>
+<script type="text/javascript" src="libs/d3/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet-src.js"></script>
+
+<!-- our scripts -->
+<script src="js/main.js"></script>
+<script src="js/handleData.js"></script>
+<script src="js/map.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.js"></script>
+</html>
